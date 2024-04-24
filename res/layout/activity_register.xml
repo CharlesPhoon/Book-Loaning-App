@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:background="@drawable/rounded_corner_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="15dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:background="@drawable/edit_text_background"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="First Name:"
+            android:ems="10"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/etlastName"
+            android:background="@drawable/edit_text_background"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name:"
+            android:ems="10"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/etEmailAddress"
+            android:background="@drawable/edit_text_background"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address:"
+            android:ems="10"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/etStudentID"
+            android:background="@drawable/edit_text_background"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Student ID:"
+            android:ems="10"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:background="@drawable/edit_text_background"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password:"
+            android:ems="10"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:background="@drawable/edit_text_background"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password:"
+            android:ems="10"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btnCreateAccount"
+            android:background="@drawable/button_background"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Create Account"/>
+
+        <TextView
+            android:id="@+id/tvlogin"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Already have account? Click here to sign in"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

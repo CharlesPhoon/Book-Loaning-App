@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanActivity">
+
+    <ImageView
+        android:id="@+id/loanImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/loanNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_below="@id/loanImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/loanAuthorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_below="@id/loanNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:textSize="20sp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loanAuthorTextView"
+        android:layout_marginTop="16dp"
+        android:hint="Your Name:"/>
+
+    <TextView
+        android:id="@+id/nameTxt2"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loanAuthorTextView"
+        android:layout_toRightOf="@+id/nameTxt"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/studentIdTxt"
+        android:textSize="20sp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTxt"
+        android:layout_marginTop="15dp"
+        android:hint="Student ID:"/>
+
+    <TextView
+        android:id="@+id/studentIdTxt2"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTxt2"
+        android:layout_toRightOf="@+id/studentIdTxt"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/loanPeriodTxt"
+        android:textSize="20sp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentIdTxt"
+        android:layout_marginTop="15dp"
+        android:hint="Loan Period:"/>
+
+    <EditText
+        android:id="@+id/loanPeriodEt"
+        android:textSize="20sp"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/studentIdTxt2"
+        android:layout_toRightOf="@+id/loanPeriodTxt"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/loanPeriodTxt2"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentIdTxt"
+        android:layout_toRightOf="@+id/loanPeriodEt"
+        android:layout_marginTop="15dp"
+        android:hint="days"/>
+
+    <Button
+        android:id="@+id/confirmLoanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:layout_centerHorizontal="true"/>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_menu"/>
+
+</RelativeLayout>
